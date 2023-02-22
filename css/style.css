@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Lexend+Deca:wght@100;200;300;400;500;600;700&family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+h2{
+    font-size: 2.4rem;
+    font-family: "Lexend Deca Light", serif;
+    text-align: center;
+}
+
+p,a{
+    font-size: 1.7rem;
+}
+
+.feedback-section{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 3.2rem;
+}
+
+.rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.2rem;
+    margin: 4.8rem 0 3.2rem 0;
+}
+
+/*.child p:first-child{}*/
+
+/*.unhappy p, .happy p, .satisfied p{}*/
+:is(.unhappy, .happy, .satisfied) h3{
+    text-align: center;
+}
+
+:is(.unhappy, .happy, .satisfied, .response-screen) p:first-child{
+    background-color: #fff1c9;
+    border-radius: 1rem;
+    font-size: 5.6rem;
+    padding: 1.6rem 2.4rem;
+    cursor: pointer;
+    margin-bottom: 1.2rem;
+    transition: all .3s linear;
+}
+
+
+:is(.unhappy, .happy, .satisfied) p:first-child:hover{
+    scale: 1.05;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+.feedback-btn{
+    width: 100%;
+    text-align: center;
+}
+
+button, a{
+    padding: 1.2rem 3.2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #20262E;
+    color: #fff;
+    font-size: 1.8rem;
+    border-radius: .5rem;
+    /*display: inline-block;*/
+    font-family: "Lexend Deca Light", serif;
+}
+
+.active{
+    scale: 1.05;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px, rgb(51, 51, 51) 0px 0px 0px 2px;
+    border-radius: .6rem;
+}
+.response-screen {
+    text-align: center;
+}
+
+.response-screen h3{
+    margin: 1.2rem 0 3.2rem 0;
+    font-size: 1.4rem;
+}
+
+.response-screen .feedback-button{
+    margin-top: 3.2rem;
+}
+
+
+
+
+
